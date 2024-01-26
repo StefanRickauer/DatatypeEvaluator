@@ -2,6 +2,11 @@ package com.rickauer.typeevaluation;
 
 public class DatatypeEvaluator {
 	
+	// Suppress default constructor to enforce non instanciability
+	private DatatypeEvaluator() {
+		throw new AssertionError();
+	}
+	
 	@SuppressWarnings("unused")
 	public static void evaluateDatatype(byte input) {
 		System.out.println("I am a byte.");
