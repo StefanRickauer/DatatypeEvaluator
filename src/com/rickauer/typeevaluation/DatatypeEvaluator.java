@@ -1,10 +1,9 @@
 package com.rickauer.typeevaluation;
 
-public class DatatypeEvaluator {
+public final class DatatypeEvaluator {
 	
-	// Suppress default constructor to enforce non instanciability
 	private DatatypeEvaluator() {
-		throw new AssertionError();
+		throw new UnsupportedOperationException("Utility class is not supposed to be instanciated.");
 	}
 	
 	@SuppressWarnings("unused")
